@@ -1,3 +1,8 @@
 # Ignore artifacts:
 build
 coverage
+
+# Ignore Angular specific files
+polyfills.ts
+test.ts
+main.ts

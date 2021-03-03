@@ -11,8 +11,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSidenavModule } from '@angular/material/sidenav';
 
-
-const AngularMaterialModule = [
+const angularMaterialModule = [
   MatButtonModule,
   MatCardModule,
   MatInputModule,
@@ -26,13 +25,7 @@ const AngularMaterialModule = [
 
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    AngularMaterialModule
-  ],
-  exports: [
-    AngularMaterialModule,
-    CommonModule
-  ]
+  imports: [CommonModule, angularMaterialModule],
+  exports: [angularMaterialModule, CommonModule]
 })
-export class SharedModule { }
+export class SharedModule {}

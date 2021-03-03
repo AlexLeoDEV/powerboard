@@ -10,19 +10,9 @@ import { SettingsModule } from './settings/settings.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    MatSidenavModule,
-    AppRoutingModule,
-    DashboardModule,
-    NewsModule,
-    SettingsModule,
-    BrowserAnimationsModule
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, MatSidenavModule, AppRoutingModule, DashboardModule, NewsModule, SettingsModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
