@@ -9,7 +9,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatRadioModule } from '@angular/material/radio';
-import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 const angularMaterialModule = [
   MatButtonModule,
@@ -20,12 +20,12 @@ const angularMaterialModule = [
   MatSnackBarModule,
   MatFormFieldModule,
   MatRadioModule,
-  MatSidenavModule
+  MatExpansionModule
 ];
 
 @NgModule({
   declarations: [],
   imports: [CommonModule, angularMaterialModule],
-  exports: [angularMaterialModule, CommonModule]
+  exports: [CommonModule, angularMaterialModule]
 })
 export class SharedModule {}
