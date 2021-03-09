@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
@@ -10,6 +11,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 const angularMaterialModule = [
   MatButtonModule,
@@ -20,12 +22,13 @@ const angularMaterialModule = [
   MatSnackBarModule,
   MatFormFieldModule,
   MatRadioModule,
-  MatExpansionModule
+  MatExpansionModule,
+  MatAutocompleteModule
 ];
 
 @NgModule({
   declarations: [],
-  imports: [CommonModule, angularMaterialModule],
-  exports: [CommonModule, angularMaterialModule]
+  imports: [CommonModule, angularMaterialModule, ReactiveFormsModule],
+  exports: [CommonModule, angularMaterialModule, ReactiveFormsModule]
 })
 export class SharedModule {}
