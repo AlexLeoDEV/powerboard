@@ -12,6 +12,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatTabsModule } from '@angular/material/tabs';
 
 const angularMaterialModule = [
   MatButtonModule,
@@ -23,7 +24,8 @@ const angularMaterialModule = [
   MatFormFieldModule,
   MatRadioModule,
   MatExpansionModule,
-  MatAutocompleteModule
+  MatAutocompleteModule,
+  MatTabsModule
 ];
 
 @NgModule({
